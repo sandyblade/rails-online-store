@@ -67,7 +67,6 @@
 		<ol type="1">
 			<li>MySQL 5.7 / Maria DB 11.3</li>
 			<li>Ruby 3.3.5</li>
-			<li>Composer 2.7</li>
 			<li>Rails 8.0.1 for REST API </li>
 		</ol>
 	</li>
