@@ -116,7 +116,6 @@ CREATE DATABASE {database-name}
 rails db:migrate
 rake db:seed
 rails s -p 8000
-```s s -p 8000
 ```
 
 #### 5. Install frontend dependencies, please move to directory rails-online-store/frontend
