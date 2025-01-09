@@ -94,7 +94,7 @@ cd rails-online-store
 bundle install
 ```
 
-#### 3. Make a database.yml in company-profile-rails/backend/config file and customize its settings 
+#### 3. Make a database.yml in rails-online-store/backend/config file and customize its settings 
 ```shell
 default: &default
   adapter: mysql2
