@@ -94,14 +94,19 @@ cd rails-online-store
 bundle install
 ```
 
-#### 3. Make a .env file and customize its settings 
+#### 3. Make a database.yml in company-profile-rails/backend/config file and customize its settings 
 ```shell
-DB_CONNECTION=mysql
-DB_HOST=localhost
-DB_PORT=3306
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: {datbase-username}
+  password: {datbase-password}
+  host: {datbase-host}
+  
+ development:
+  <<: *default
+  database: {datbase-name}
 ```
 
 #### 4. Start MySQL / Maria DB Service , Seed data and Running REST API
@@ -111,6 +116,7 @@ CREATE DATABASE {database-name}
 rails db:migrate
 rake db:seed
 rails s -p 8000
+```s s -p 8000
 ```
 
 #### 5. Install frontend dependencies, please move to directory rails-online-store/frontend
