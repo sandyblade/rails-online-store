@@ -85,7 +85,7 @@
 ## Getting Started
 #### 1. Clone the repository and navigate to the directory
 ```shell
-git https://github.com/sandyblade/rails-online-store.git
+git clone https://github.com/sandyblade/rails-online-store.git
 cd rails-online-store
 ```
 
